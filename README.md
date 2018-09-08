@@ -237,3 +237,27 @@ public enum ShippingMethod
 
 var method = ShippingMethod.Express;
 ```
+
+#### Reference Types and Value Types
+
+- Types: 1. Structures[Value types] (Primitive) 2. Classes[Reference types] (Arrays, String)
+
+##### Value types
+
+- Allocated on stack
+- Memory Allocation done automatically 
+- Immediately removed out of scope
+
+#### Reference types
+
+- I need to allocate memory myself
+- Memory allocated on heap
+
+```simple example
+    var a = 10;
+    var b = a;
+    b++; //still a=10, a is an integer[value type]
+    Console.WriteLine(string.Format("a: {0}, b: {1}", a,b)); //a =10, b =11
+```
+
+
