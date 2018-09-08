@@ -253,11 +253,28 @@ var method = ShippingMethod.Express;
 - I need to allocate memory myself
 - Memory allocated on heap
 
-```simple example
+
+##### Value type example
+
+```c#
     var a = 10;
     var b = a;
-    b++; //still a=10, a is an integer[value type]
+    b++; //still value of a is not changed, a=10, a is an integer[value type]
     Console.WriteLine(string.Format("a: {0}, b: {1}", a,b)); //a =10, b =11
 ```
+
+##### Reference type example
+
+- stack and heap affects the value I want to change
+
+
+```c#
+    var array1 = new int[3] {1,2,3};
+    var array2 = array1;
+    array2[0] = 0; //array2[0] is changed!! 
+
+    Console.WriteLine(string.Format("array1[0]:{0}, array2[0]:{1}", array1[0], array2[0]));
+```
+- Below, array1 and array2 points to the same value inside `heap`
 
 
