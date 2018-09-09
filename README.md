@@ -1,5 +1,10 @@
-## New_Project_Sept08
+## New_Project_Sept08 (C#)
+
+<br>
+
 ### C# Learning & Mini Project 09072018 
+
+<br>
 
 ### C# Basic Concept
 
@@ -27,7 +32,6 @@ ex) `Window Form`, `ASP.NET`, `ADO.NET`
 ### Background
 
 * Namespace: a collection of classes 
-
 
 * Assembly: a container of related Namespaces 
 
@@ -81,14 +85,14 @@ ex) `Window Form`, `ASP.NET`, `ADO.NET`
 
 <br>
 
-### C# Fundamentals
+## C# Fundamentals
 
 - **Variable**: a name given to a storage location in the memory 
 - **Constant**: an immutable value
 
 <br>
 
-## *Primitive Types*
+## 1. *Primitive Types*
 
 
 ### Integer Numbers
@@ -101,7 +105,7 @@ ex) `Window Form`, `ASP.NET`, `ADO.NET`
 
 <br>
 
-## *Non Primitive Types*
+## 2. *Non Primitive Types*
 
 - String / Array / Enum / Class
 
@@ -224,10 +228,13 @@ var names = new string[3] { "John", "Mary", "Jack" };
 ```
 
 <br>
+<br>
 
 #### Enum: A set of name/value pairs (constants)
 
 - Instead of saving or creating each constant, with `Enum`, we can easily create a collection of constants and use it
+
+<br>
 
 ```c#
 public enum ShippingMethod
@@ -240,21 +247,31 @@ public enum ShippingMethod
 var method = ShippingMethod.Express;
 ```
 
+<br>
+
 #### Reference Types and Value Types
 
 - Types: 1. Structures[Value types] (Primitive) 2. Classes[Reference types] (Arrays, String)
 
-##### Value types
+<br>
+<br>
+
+#### Value types
 
 - Allocated on stack
 - Memory Allocation done automatically 
 - Immediately removed out of scope
+
+<br>
+<br>
 
 #### Reference types
 
 - I need to allocate memory myself
 - Memory allocated on heap
 
+<br>
+<br>
 
 ##### Value type example
 
@@ -265,7 +282,11 @@ var method = ShippingMethod.Express;
     Console.WriteLine(string.Format("a: {0}, b: {1}", a,b)); //a =10, b =11
 ```
 
-##### Reference type example
+<br>
+<br>
+
+
+#### Reference type example
 
 - stack and heap affects the value I want to change
 
@@ -299,6 +320,10 @@ var method = ShippingMethod.Express;
 
 `float price = (isGoldCustomer) ? 19.95f : 29.95f;`
 
+
+<br>
+<br>
+
 - Iteration: For, While, Foreach, Do-While
 
 `for (var i=0;i<10; i++) { }`
@@ -310,6 +335,8 @@ var method = ShippingMethod.Express;
 ```
 
 <br>
+<br>
+
 
 ### Arrays
 
@@ -345,6 +372,7 @@ array [2] = new int[3];
 ```
 
 ##### demo
+
 ```c#
 var numbers = new[] { 1, 2, 3, 4, 5, 6 };
 
@@ -363,6 +391,8 @@ foreach (var n in numbers)
     Console.WriteLine(n);
 ```
 
+<br>
+<br>
 
 ### Lists
 
@@ -374,6 +404,8 @@ foreach (var n in numbers)
 
 `var numbers = new List<int>();`
 
+<br>
+
 ##### demo
 
 ```c#
@@ -381,6 +413,81 @@ var numbers = new List<int>() {1,2,3,4};
 numbers.Add(1);
 numbers.AddRange(new int[3] {5,6,7});
 ```
+
+<br>
+
+#### Work with Dates
+
+`var dateTime = new DateTime(2015, 1, 1);`
+
+`var now = DateTime.Now;`
+
+`var today = DateTime.Today;`
+
+
+#### Work with Text
+
+- Strings: a class, immutable
+
+- ToLower(), ToUpper(), Trim()
+
+- **String Builder** : makes it really easy to modify Sting
+
+    - Append(), Insert(), Remove(), Replace()
+
+<br>
+
+##### String demo
+
+```c#
+var fullName = "Jaehoon Jay Kang";
+
+    Console.WriteLine("Trim: '{0}'", fullName.Trim());
+    Console.WriteLine("ToUpperCase: '{0}'", fullName.ToUpper());
+
+    var index = fullName.IndexOf(' ');
+    var firstName = fullName.Substring(0, index);
+    var lastName = fullName.Substring(index + 1);
+
+    Console.WriteLine("Firstname: " + firstName);
+    Console.WriteLine("Lastname: " + lastName);
+```
+
+<br>
+
+##### String Builder demo
+
+```c#
+System.Text;
+
+    var builder = new StringBuilder();
+    builder.Append('-', 10);
+    builder.AppendLine();
+    builder.Append('Header');
+    builder.AppendLine();
+    builder.Append('-', 10);
+
+    builder.Replace('-', '+');
+
+    builder.Remove(0, 10);
+
+    builder.Insert(0, new string('-', 10));
+
+    Console.WriteLine(builder);
+```
+
+
+### Procedual Programming
+
+- A programming paradigm based on procedure calls
+
+
+
+
+
+
+
+
 
 
 
