@@ -277,4 +277,33 @@ var method = ShippingMethod.Express;
 ```
 - Below, array1 and array2 points to the same value inside `heap`
 
+<br>
+<br>
 
+### Control Flow
+
+- Conditional Statements: if/else 
+
+```c
+
+    int hour = 10;
+
+    if (hour > 0 && hour < 12)
+        Console.WriteLine("It's morning");
+    else if (hour >= 12 && hour < 18)
+        Console.WriteLine("It's afternoon");
+    else
+        Console.WriteLine("It's evening");
+```
+
+`float price = (isGoldCustomer) ? 19.95f : 29.95f;`
+
+- Iteration: For, While, Foreach, Do-While
+
+`for (var i=0;i<10; i++) { }`
+
+```c#
+    var random = new Random();
+    for (var i = 0; i < 10; i++)
+        Console.WriteLine(random.Next(1, 10));
+```
