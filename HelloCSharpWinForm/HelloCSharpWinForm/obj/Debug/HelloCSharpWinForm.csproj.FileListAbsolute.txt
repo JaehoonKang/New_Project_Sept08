@@ -1,0 +1,10 @@
+C:\Users\user\source\repos\HelloCSharpWinForm\HelloCSharpWinForm\obj\Debug\HelloCSharpWinForm.csprojAssemblyReference.cache
+C:\Users\user\source\repos\HelloCSharpWinForm\HelloCSharpWinForm\obj\Debug\HelloCSharpWinForm.Calculator.resources
+C:\Users\user\source\repos\HelloCSharpWinForm\HelloCSharpWinForm\obj\Debug\HelloCSharpWinForm.Properties.Resources.resources
+C:\Users\user\source\repos\HelloCSharpWinForm\HelloCSharpWinForm\obj\Debug\HelloCSharpWinForm.csproj.GenerateResource.cache
+C:\Users\user\source\repos\HelloCSharpWinForm\HelloCSharpWinForm\obj\Debug\HelloCSharpWinForm.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\HelloCSharpWinForm\HelloCSharpWinForm\bin\Debug\HelloCSharpWinForm.exe.config
+C:\Users\user\source\repos\HelloCSharpWinForm\HelloCSharpWinForm\bin\Debug\HelloCSharpWinForm.exe
+C:\Users\user\source\repos\HelloCSharpWinForm\HelloCSharpWinForm\bin\Debug\HelloCSharpWinForm.pdb
+C:\Users\user\source\repos\HelloCSharpWinForm\HelloCSharpWinForm\obj\Debug\HelloCSharpWinForm.exe
+C:\Users\user\source\repos\HelloCSharpWinForm\HelloCSharpWinForm\obj\Debug\HelloCSharpWinForm.pdb
