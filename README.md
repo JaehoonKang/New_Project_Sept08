@@ -481,6 +481,9 @@ System.Text;
 
 - A programming paradigm based on procedure calls
 
+vs **Object-oriented Programming** : Based on Objects
+
+
 
 
 
