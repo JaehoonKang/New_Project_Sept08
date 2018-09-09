@@ -1,13 +1,15 @@
-# New_Project_Sept08
-# C# Learning & Mini Project 09072018 
+## New_Project_Sept08
+### C# Learning & Mini Project 09072018 
 
-## C# Basic Concept
+### C# Basic Concept
 
 - Importance of C#: IoT, Web, Game, App, Cloud, Network
 
 <br>
 
-### *Definition*: A strong, multi-paradigm Programming Language developed by MS within its .NET initiative & a general-purpose, object-oriented programming language.
+### *Definition*
+
+    => A strong, multi-paradigm Programming Language developed by MS within its .NET initiative & a general-purpose, object-oriented programming language.
 
 ex) `Window Form`, `ASP.NET`, `ADO.NET`
 
@@ -285,7 +287,6 @@ var method = ShippingMethod.Express;
 - Conditional Statements: if/else 
 
 ```c
-
     int hour = 10;
 
     if (hour > 0 && hour < 12)
@@ -307,3 +308,79 @@ var method = ShippingMethod.Express;
     for (var i = 0; i < 10; i++)
         Console.WriteLine(random.Next(1, 10));
 ```
+
+<br>
+
+### Arrays
+
+1. Single Dimension 
+
+    - `var numbers = new int[5];`
+
+    - `var numbers = new int[5] {1,2,3,4,5};`
+
+2. Multi Dimension (Metrix)
+
+    - Rectangular
+
+        `var matrix = new int[3, 5];`
+
+ ```c#
+    var matrix = new int[3, 5]
+    {
+        {1,2,3,4,5},
+        {2,4,6,8,10},
+        {3,4,5,6,7}
+    };
+```
+
+- Jagged: many lines of singular arrays
+
+```c#
+var array = new int[3][];
+
+array [0] = new int[4];
+array [1] = new int[5];
+array [2] = new int[3];
+```
+
+##### demo
+```c#
+var numbers = new[] { 1, 2, 3, 4, 5, 6 };
+
+    //Length
+    Console.WriteLine("Length:" + numbers.Length);
+
+    //IndexOf
+var index = Array.IndexOf(numbers, 4);
+
+    Console.WriteLine("Index of 4:" + index);
+
+    //Clear
+Array.Clear(numbers, 0, 2);
+
+foreach (var n in numbers)
+    Console.WriteLine(n);
+```
+
+
+### Lists
+
+=> Not sure ahead of time, how many objects I work with
+
+-  Arrays: Fixed size
+
+- List: Dynamic size
+
+`var numbers = new List<int>();`
+
+##### demo
+
+```c#
+var numbers = new List<int>() {1,2,3,4};
+numbers.Add(1);
+numbers.AddRange(new int[3] {5,6,7});
+```
+
+
+
